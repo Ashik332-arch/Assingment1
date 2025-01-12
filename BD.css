@@ -1,0 +1,506 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d3d3d3;
+    margin-left: 0px; 
+    margin-right: 0px; 
+}
+
+header {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.sign-in {
+    background: white;
+    color: #0b7d91;
+    border: 2px solid green;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;  
+    right: 15px; 
+    top: 20px;
+    margin-right: 30px;
+}
+
+.hero {
+    background-color: #6ddab9;
+    padding: 80px 40px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: left;
+    color: #090909;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h5 {
+    color: #827e7e;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero .explore-btn {
+    background-color: #3c683c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-img {
+    max-width: 50%; 
+    height: auto;
+}
+
+
+
+.pillars-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.pillar {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 32%;
+    transition: transform 0.3s;
+}
+.pillars h2 {
+    margin-left: 40px;
+}
+
+
+.pillar:hover {
+    transform: translateY(-10px);
+}
+
+.pillar h3 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.pillar p {
+    color: #555;
+}
+
+.vision-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.vision h2 {
+    margin-left: 40px; 
+}
+
+.vision h2 + p {
+    margin-left: 40px; 
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 32%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #000000;
+}
+
+.card .favorite.styled {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card:nth-child(1) .favorite.styled {
+    background-color: #2eb700; 
+}
+
+.card:nth-child(2) .favorite.styled {
+    background-color: #ac5300; 
+}
+
+.card:nth-child(3) .favorite.styled {
+    background-color: #264653; 
+}
+
+.card .favorite.styled:hover {
+    background-color: #2f873f; 
+}
+
+.card:nth-child(1) {
+    background-color: #98f19b;
+}
+
+.card:nth-child(2) {
+    background-color: #f3c376;
+}
+
+.card:nth-child(3) {
+    background-color: #9ad0f4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.quote-card {
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    position: relative;
+    border: 2px solid #333;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; 
+    background-image: url('quote-bg.png'); 
+    background-position: top left; 
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+    text-align: left;
+}
+
+blockquote, .author {
+    position: relative;
+    z-index: 1;
+    color: rgb(11, 10, 10); 
+    margin-left: 0; 
+}
+
+blockquote p {
+    margin-left: 0; 
+    margin-right: 0; 
+}
+
+
+
+
+
+
+.opinion {
+    width: 100%; 
+    padding: 0 40px; 
+}
+
+
+.opinion-table {
+    width: 100%; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    border-collapse: collapse; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+.opinion-table th, .opinion-table td {
+    padding: 15px;
+    text-align: left; 
+    border-bottom: 1px solid #ddd; 
+}
+
+.opinion-table td {
+    border-left: 1px solid #ddd; 
+    border-right: 1px solid #ddd; 
+}
+
+.opinion-table th {
+    background-color: #0b7d91; 
+    color: white; 
+}
+
+.opinion-table td {
+    background-color: #ffffff; 
+}
+
+.opinion-table select {
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    background-color: #f9f9f9; 
+    font-size: 1rem; 
+}
+
+
+.news {
+    margin: 40px 40px; 
+}
+
+.news h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+
+.news-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.news-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.news-img {
+    width: 40%; 
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.news-item .news-img[src="al-jazeera.png"] {
+    box-shadow: none; 
+    border: none;
+    object-fit: contain; 
+}
+
+.news-item:nth-child(1) .news-img {
+    order: 1; 
+}
+
+.news-item:nth-child(2) .news-img {
+    order: 2; 
+}
+
+.news-content {
+    flex: 1; 
+}
+
+.news-content h3 {
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.news-content p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.news-content button {
+    background-color: #0b7d91;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.news-content button:hover {
+    background-color: #095d6d;
+}
+
+
+
+.donate {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.donation-options button:nth-child(3) {
+    background-color: #0b7d91; 
+    color: rgb(0, 0, 0); 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.donation-options button {
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.donation-options button:hover {
+    background-color: #45a049;
+}
+
+.donate input {
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.donate :placeholder-shown{
+    width: 430px;
+}
+
+.donate .favorite.styled {
+    background-color: #0b7d91;
+    color: white;
+    border: 2px solid #0b7d91;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.donate .favorite.styled:hover {
+    background-color: #45a049;
+}
+
+.newsletter {
+    background-color: #aff9c8;
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    background-color: #45a049;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #0b7d91;
+}
+
+.card:hover, .pillar:hover, .news-item:hover {
+    transform: translateY(-10px);
+}
+
+.favorite.styled:hover {
+    background-color: #45a049;
+}
+
+.quote-section {
+    background-color: #0b7d91;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote-section .quote-icon {
+    background-color: #f3c376;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+footer {
+    background-color: #ffffff; 
+    padding: 20px; 
+    text-align: center;
+    border-top: 1px solid #ddd; 
+    font-size: 1rem; 
+    margin: 0;
+}
+
+footer p {
+    margin: 10px 0; 
+    font-weight: bold;
+    color: #000; 
+}
+
+.social-icons {
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.icon {
+    display: inline-block;
+    width: 30px; 
+    height: 30px; 
+    background-size: cover; 
+    background-position: center;
+    border-radius: 50%; 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+
+.icon.facebook {
+    background-image: url('facebook.png'); 
+}
+
+.icon.instagram {
+    background-image: url('instagram.png'); 
+}
+
+.icon.twitter {
+    background-image: url('x.png'); 
+}
+
+.icon:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+
